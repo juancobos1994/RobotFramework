@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1rc1 (Python 3.8.6 on win32)" generated="20230908 08:55:19.935" rpa="false" schemaversion="2">
+<suite id="s1" name="CompareImages4" source="C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Ejemplos\CompareImages4.robot">
+<test id="s1-t1" name="Demo Uno">
+<kw name="Compare Images Size" library="FunctionsCompareImages">
+<var>${Result1}</var>
+<arg>${img1}</arg>
+<arg>${img2}</arg>
+<msg timestamp="20230908 08:55:21.344" level="INFO">${Result1} = The images have same size and channels</msg>
+<status status="PASS" starttime="20230908 08:55:21.340" endtime="20230908 08:55:21.344"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230908 08:55:21.344" endtime="20230908 08:55:21.345"/>
+</kw>
+<doc>Demo Uno</doc>
+<tag>TestUno</tag>
+<status status="PASS" starttime="20230908 08:55:21.340" endtime="20230908 08:55:21.345"/>
+</test>
+<test id="s1-t2" name="Demo Dos">
+<kw name="Compare Image RGB" library="FunctionsCompareImages">
+<var>${Result2}</var>
+<arg>${img1}</arg>
+<arg>${img2}</arg>
+<msg timestamp="20230908 08:55:21.350" level="INFO">${Result2} = The images are completely Equal</msg>
+<status status="PASS" starttime="20230908 08:55:21.345" endtime="20230908 08:55:21.350"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230908 08:55:21.350" endtime="20230908 08:55:21.350"/>
+</kw>
+<doc>Demo Dos</doc>
+<tag>TestDos</tag>
+<status status="PASS" starttime="20230908 08:55:21.345" endtime="20230908 08:55:21.350"/>
+</test>
+<test id="s1-t3" name="Demo Tres">
+<kw name="Compare Image Similarity" library="FunctionsCompareImages">
+<var>${Result3}</var>
+<arg>${img1}</arg>
+<arg>${img2}</arg>
+<msg timestamp="20230908 08:55:21.428" level="INFO">Keypoints 1ST Image: 1142
+Keypoints 2ND Image: 1142
+GOOD Matches: 1142
+How good it's the match:  100.0</msg>
+<msg timestamp="20230908 08:55:21.428" level="INFO">${Result3} = 100.0</msg>
+<status status="PASS" starttime="20230908 08:55:21.351" endtime="20230908 08:55:21.428"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result3}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230908 08:55:21.429" endtime="20230908 08:55:21.429"/>
+</kw>
+<doc>Demo Tres</doc>
+<tag>TestTres</tag>
+<status status="PASS" starttime="20230908 08:55:21.351" endtime="20230908 08:55:21.429"/>
+</test>
+<doc>Practica Dos</doc>
+<status status="PASS" starttime="20230908 08:55:19.936" endtime="20230908 08:55:21.429"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">TestDos</stat>
+<stat pass="1" fail="0" skip="0">TestTres</stat>
+<stat pass="1" fail="0" skip="0">TestUno</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="CompareImages4">CompareImages4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

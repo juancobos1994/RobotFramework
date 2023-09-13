@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1rc1 (Python 3.8.6 on win32)" generated="20230828 23:39:02.425" rpa="false" schemaversion="2">
+<suite id="s1" name="Pruebapabot &amp; Pruebapabot2 &amp; Pruebapabot3">
+<suite id="s1-s1" name="Pruebapabot" source="C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Ejemplos\Pruebapabot.robot">
+<test id="s1-s1-t1" name="Demo Uno">
+<kw name="Inicio">
+<tag>TestUno</tag>
+<doc>Prueba Uno utilizan Pabot</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:39:02.523" level="INFO">Opening browser 'Firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<msg timestamp="20230828 23:39:02.523" level="INFO">Firefox driver log is always forced to to: C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Reportes4\geckodriver-1.log</msg>
+<msg timestamp="20230828 23:39:02.526" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230828 23:39:02.523" endtime="20230828 23:39:10.392"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 23:39:10.392" endtime="20230828 23:39:10.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:39:12.661" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:39:10.658" endtime="20230828 23:39:12.661"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230828 23:39:12.663" level="INFO">Page title is 'DEMOQA'.</msg>
+<status status="PASS" starttime="20230828 23:39:12.661" endtime="20230828 23:39:12.663"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230828 23:39:12.663" endtime="20230828 23:39:12.664"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230828 23:39:12.664" endtime="20230828 23:39:12.664"/>
+</kw>
+<kw name="F_texto" library="Funciones">
+<arg>//input[@id='userName']</arg>
+<arg>Juan</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230828 23:39:12.665" endtime="20230828 23:39:12.892"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230828 23:39:12.892" endtime="20230828 23:39:13.232"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230828 23:39:13.453" level="INFO">Element '//input[@id='userName']' is displayed.</msg>
+<status status="PASS" starttime="20230828 23:39:13.232" endtime="20230828 23:39:13.453"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230828 23:39:13.453" endtime="20230828 23:39:13.672"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,50)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230828 23:39:13.672" level="INFO">Executing JavaScript:
+window.scrollTo(0,50)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230828 23:39:13.672" endtime="20230828 23:39:13.781"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 23:39:13.781" level="INFO">Typing text 'Juan' into text field '//input[@id='userName']'.</msg>
+<status status="PASS" starttime="20230828 23:39:13.781" endtime="20230828 23:39:14.111"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<arg>${ruta_foto_guardar}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20230828 23:39:14.330" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../reporte2/IMG/Juan.png"&gt;&lt;img src="../reporte2/IMG/Juan.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230828 23:39:14.111" endtime="20230828 23:39:14.330"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:12.664" endtime="20230828 23:39:14.331"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:02.522" endtime="20230828 23:39:14.331"/>
+</kw>
+<kw name="Fin">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:39:16.333" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:39:14.331" endtime="20230828 23:39:16.333"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:39:16.333" endtime="20230828 23:39:18.896"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:14.331" endtime="20230828 23:39:18.896"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:02.522" endtime="20230828 23:39:18.896"/>
+</test>
+<doc>Practica Uno</doc>
+<status status="PASS" starttime="20230828 23:39:02.435" endtime="20230828 23:39:18.897"/>
+</suite>
+<suite id="s1-s2" name="Pruebapabot2" source="C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Ejemplos\Pruebapabot2.robot">
+<test id="s1-s2-t1" name="Demo Uno">
+<kw name="Inicio">
+<tag>TestUno</tag>
+<doc>Prueba Uno utilizan Pabot</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:39:18.901" level="INFO">Opening browser 'Firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<msg timestamp="20230828 23:39:18.901" level="INFO">Firefox driver log is always forced to to: C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Reportes4\geckodriver-2.log</msg>
+<msg timestamp="20230828 23:39:18.906" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230828 23:39:18.900" endtime="20230828 23:39:26.992"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 23:39:26.992" endtime="20230828 23:39:27.349"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:39:29.357" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:39:27.349" endtime="20230828 23:39:29.357"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230828 23:39:29.466" level="INFO">Page title is 'DEMOQA'.</msg>
+<status status="PASS" starttime="20230828 23:39:29.357" endtime="20230828 23:39:29.466"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230828 23:39:29.466" endtime="20230828 23:39:29.576"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230828 23:39:29.576" endtime="20230828 23:39:29.576"/>
+</kw>
+<kw name="F_texto" library="Funciones">
+<arg>//input[@id='userName']</arg>
+<arg>Juan</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230828 23:39:29.576" endtime="20230828 23:39:29.793"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230828 23:39:29.793" endtime="20230828 23:39:30.119"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230828 23:39:30.337" level="INFO">Element '//input[@id='userName']' is displayed.</msg>
+<status status="PASS" starttime="20230828 23:39:30.119" endtime="20230828 23:39:30.337"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230828 23:39:30.337" endtime="20230828 23:39:30.557"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,50)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230828 23:39:30.557" level="INFO">Executing JavaScript:
+window.scrollTo(0,50)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230828 23:39:30.557" endtime="20230828 23:39:30.667"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 23:39:30.667" level="INFO">Typing text 'Juan' into text field '//input[@id='userName']'.</msg>
+<status status="PASS" starttime="20230828 23:39:30.667" endtime="20230828 23:39:30.994"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<arg>${ruta_foto_guardar}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20230828 23:39:31.212" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../reporte2/IMG/Juan.png"&gt;&lt;img src="../reporte2/IMG/Juan.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230828 23:39:30.994" endtime="20230828 23:39:31.212"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:29.576" endtime="20230828 23:39:31.212"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:18.900" endtime="20230828 23:39:31.212"/>
+</kw>
+<kw name="Fin">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:39:33.214" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:39:31.213" endtime="20230828 23:39:33.214"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:39:33.214" endtime="20230828 23:39:35.780"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:31.213" endtime="20230828 23:39:35.780"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:18.900" endtime="20230828 23:39:35.780"/>
+</test>
+<doc>Practica Uno</doc>
+<status status="PASS" starttime="20230828 23:39:18.898" endtime="20230828 23:39:35.781"/>
+</suite>
+<suite id="s1-s3" name="Pruebapabot3" source="C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Ejemplos\Pruebapabot3.robot">
+<test id="s1-s3-t1" name="Demo Uno">
+<kw name="Inicio">
+<tag>TestUno</tag>
+<doc>Prueba Uno utilizan Pabot</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:39:35.785" level="INFO">Opening browser 'Firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<msg timestamp="20230828 23:39:35.785" level="INFO">Firefox driver log is always forced to to: C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Reportes4\geckodriver-3.log</msg>
+<msg timestamp="20230828 23:39:35.788" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230828 23:39:35.785" endtime="20230828 23:39:44.584"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230828 23:39:44.584" endtime="20230828 23:39:44.957"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:39:46.972" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:39:44.957" endtime="20230828 23:39:46.972"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230828 23:39:47.081" level="INFO">Page title is 'DEMOQA'.</msg>
+<status status="PASS" starttime="20230828 23:39:46.972" endtime="20230828 23:39:47.081"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230828 23:39:47.081" endtime="20230828 23:39:47.193"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230828 23:39:47.193" endtime="20230828 23:39:47.193"/>
+</kw>
+<kw name="F_texto" library="Funciones">
+<arg>//input[@id='userName']</arg>
+<arg>Juan</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230828 23:39:47.193" endtime="20230828 23:39:47.413"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230828 23:39:47.413" endtime="20230828 23:39:47.742"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230828 23:39:47.960" level="INFO">Element '//input[@id='userName']' is displayed.</msg>
+<status status="PASS" starttime="20230828 23:39:47.742" endtime="20230828 23:39:47.960"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230828 23:39:47.960" endtime="20230828 23:39:48.176"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,50)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230828 23:39:48.176" level="INFO">Executing JavaScript:
+window.scrollTo(0,50)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230828 23:39:48.176" endtime="20230828 23:39:48.286"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<arg>${dato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230828 23:39:48.286" level="INFO">Typing text 'Juan' into text field '//input[@id='userName']'.</msg>
+<status status="PASS" starttime="20230828 23:39:48.286" endtime="20230828 23:39:48.631"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>${sel}</arg>
+<arg>${ruta_foto_guardar}${dato}.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20230828 23:39:48.849" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../reporte2/IMG/Juan.png"&gt;&lt;img src="../reporte2/IMG/Juan.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230828 23:39:48.631" endtime="20230828 23:39:48.849"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:47.193" endtime="20230828 23:39:48.850"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:35.785" endtime="20230828 23:39:48.850"/>
+</kw>
+<kw name="Fin">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:39:50.850" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:39:48.850" endtime="20230828 23:39:50.850"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:39:50.850" endtime="20230828 23:39:53.443"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:48.850" endtime="20230828 23:39:53.444"/>
+</kw>
+<status status="PASS" starttime="20230828 23:39:35.784" endtime="20230828 23:39:53.444"/>
+</test>
+<doc>Practica Uno</doc>
+<status status="PASS" starttime="20230828 23:39:35.782" endtime="20230828 23:39:53.444"/>
+</suite>
+<status status="PASS" starttime="20230828 23:39:02.426" endtime="20230828 23:39:53.445"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Pruebapabot &amp; Pruebapabot2 &amp; Pruebapabot3">Pruebapabot &amp; Pruebapabot2 &amp; Pruebapabot3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Pruebapabot">Pruebapabot &amp; Pruebapabot2 &amp; Pruebapabot3.Pruebapabot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Pruebapabot2">Pruebapabot &amp; Pruebapabot2 &amp; Pruebapabot3.Pruebapabot2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Pruebapabot3">Pruebapabot &amp; Pruebapabot2 &amp; Pruebapabot3.Pruebapabot3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

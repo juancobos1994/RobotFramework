@@ -1,0 +1,7 @@
+datasources:3ccb6ab383662939a3f228d8a0626992fdd7a52b
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:207fa20487766409c28b2c2c9520a5e95df6dbb6
+--suite Suites.Pruebapabot
+--suite Suites.Pruebapabot2
+--suite Suites.Pruebapabot3

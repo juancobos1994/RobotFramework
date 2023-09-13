@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1rc1 (Python 3.8.6 on win32)" generated="20230913 09:37:44.283" rpa="false" schemaversion="2">
+<suite id="s1" name="Ejemplo1" source="c:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\CompareImages\Ejemplo1.robot">
+<test id="s1-t1" name="Prueba Compare Images using">
+<kw name="CompareImagesExample">
+<arg>https://www.python.org/</arg>
+<arg>xpath = //img[@src='/static/img/python-logo.png']</arg>
+<doc>Comparando Imagenes</doc>
+<kw name="Compare Images" library="Funciones1">
+<var>${Result}</var>
+<arg>${link}</arg>
+<arg>${locator}</arg>
+<msg timestamp="20230913 09:37:50.028" level="INFO">Keypoints 1ST Image: 6519
+Keypoints 2ND Image: 73
+GOOD Matches: 94
+How good it's the match:  128.76712328767124</msg>
+<msg timestamp="20230913 09:37:50.030" level="INFO">${Result} = 128.76712328767124</msg>
+<status status="PASS" starttime="20230913 09:37:44.908" endtime="20230913 09:37:50.030"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230913 09:37:50.030" endtime="20230913 09:37:50.030"/>
+</kw>
+<if>
+<branch type="IF" condition="$Result &lt; 90">
+<kw name="Fail" library="BuiltIn">
+<arg>msg=The images do not meet the minimum percentage of similarity</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230913 09:37:50.032" endtime="20230913 09:37:50.032"/>
+</kw>
+<status status="NOT RUN" starttime="20230913 09:37:50.032" endtime="20230913 09:37:50.032"/>
+</branch>
+<branch type="ELSE">
+<kw name="Pass Execution" library="BuiltIn">
+<arg>msg=Same images</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<msg timestamp="20230913 09:37:50.032" level="INFO">Execution passed with message:
+msg=Same images</msg>
+<status status="PASS" starttime="20230913 09:37:50.032" endtime="20230913 09:37:50.032"/>
+</kw>
+<status status="PASS" starttime="20230913 09:37:50.032" endtime="20230913 09:37:50.032"/>
+</branch>
+<status status="PASS" starttime="20230913 09:37:50.030" endtime="20230913 09:37:50.032"/>
+</if>
+<status status="PASS" starttime="20230913 09:37:44.908" endtime="20230913 09:37:50.033"/>
+</kw>
+<status status="PASS" starttime="20230913 09:37:44.907" endtime="20230913 09:37:50.033">msg=Same images</status>
+</test>
+<test id="s1-t2" name="Prueba Compare Images using">
+<kw name="CompareImagesExample">
+<arg>https://www.python.org/</arg>
+<arg>xpath = //*[@id="touchnav-wrapper"]/header/div/div[2]</arg>
+<doc>Comparando Imagenes</doc>
+<kw name="Compare Images" library="Funciones1">
+<var>${Result}</var>
+<arg>${link}</arg>
+<arg>${locator}</arg>
+<msg timestamp="20230913 09:37:54.956" level="INFO">Keypoints 1ST Image: 6511
+Keypoints 2ND Image: 812
+GOOD Matches: 549
+How good it's the match:  67.61083743842364</msg>
+<msg timestamp="20230913 09:37:54.956" level="INFO">${Result} = 67.61083743842364</msg>
+<status status="PASS" starttime="20230913 09:37:50.035" endtime="20230913 09:37:54.956"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230913 09:37:54.956" endtime="20230913 09:37:54.956"/>
+</kw>
+<if>
+<branch type="IF" condition="$Result &lt; 90">
+<kw name="Fail" library="BuiltIn">
+<arg>msg=The images do not meet the minimum percentage of similarity</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<msg timestamp="20230913 09:37:54.958" level="FAIL">The images do not meet the minimum percentage of similarity</msg>
+<status status="FAIL" starttime="20230913 09:37:54.958" endtime="20230913 09:37:54.959"/>
+</kw>
+<status status="FAIL" starttime="20230913 09:37:54.958" endtime="20230913 09:37:54.959"/>
+</branch>
+<branch type="ELSE">
+<kw name="Pass Execution" library="BuiltIn">
+<arg>msg=Same images</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="NOT RUN" starttime="20230913 09:37:54.959" endtime="20230913 09:37:54.959"/>
+</kw>
+<status status="NOT RUN" starttime="20230913 09:37:54.959" endtime="20230913 09:37:54.959"/>
+</branch>
+<status status="FAIL" starttime="20230913 09:37:54.958" endtime="20230913 09:37:54.959"/>
+</if>
+<status status="FAIL" starttime="20230913 09:37:50.035" endtime="20230913 09:37:54.959"/>
+</kw>
+<status status="FAIL" starttime="20230913 09:37:50.034" endtime="20230913 09:37:54.960">The images do not meet the minimum percentage of similarity</status>
+</test>
+<test id="s1-t3" name="Prueba Compare Images using">
+<kw name="CompareImagesExample">
+<arg>https://www.python.org/</arg>
+<arg>xpath = //*[@id="touchnav-wrapper"]/header/div</arg>
+<doc>Comparando Imagenes</doc>
+<kw name="Compare Images" library="Funciones1">
+<var>${Result}</var>
+<arg>${link}</arg>
+<arg>${locator}</arg>
+<msg timestamp="20230913 09:38:00.373" level="INFO">Keypoints 1ST Image: 6522
+Keypoints 2ND Image: 1640
+GOOD Matches: 1150
+How good it's the match:  70.1219512195122</msg>
+<msg timestamp="20230913 09:38:00.373" level="INFO">${Result} = 70.1219512195122</msg>
+<status status="PASS" starttime="20230913 09:37:54.962" endtime="20230913 09:38:00.373"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230913 09:38:00.373" endtime="20230913 09:38:00.374"/>
+</kw>
+<if>
+<branch type="IF" condition="$Result &lt; 90">
+<kw name="Fail" library="BuiltIn">
+<arg>msg=The images do not meet the minimum percentage of similarity</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<msg timestamp="20230913 09:38:00.375" level="FAIL">The images do not meet the minimum percentage of similarity</msg>
+<status status="FAIL" starttime="20230913 09:38:00.374" endtime="20230913 09:38:00.375"/>
+</kw>
+<status status="FAIL" starttime="20230913 09:38:00.374" endtime="20230913 09:38:00.375"/>
+</branch>
+<branch type="ELSE">
+<kw name="Pass Execution" library="BuiltIn">
+<arg>msg=Same images</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="NOT RUN" starttime="20230913 09:38:00.375" endtime="20230913 09:38:00.375"/>
+</kw>
+<status status="NOT RUN" starttime="20230913 09:38:00.375" endtime="20230913 09:38:00.375"/>
+</branch>
+<status status="FAIL" starttime="20230913 09:38:00.374" endtime="20230913 09:38:00.375"/>
+</if>
+<status status="FAIL" starttime="20230913 09:37:54.962" endtime="20230913 09:38:00.375"/>
+</kw>
+<status status="FAIL" starttime="20230913 09:37:54.961" endtime="20230913 09:38:00.376">The images do not meet the minimum percentage of similarity</status>
+</test>
+<test id="s1-t4" name="Prueba Compare Images using">
+<kw name="CompareImagesExample">
+<arg>https://www.python.org/</arg>
+<arg>xpath = //*[@id="mainnav"]</arg>
+<doc>Comparando Imagenes</doc>
+<kw name="Compare Images" library="Funciones1">
+<var>${Result}</var>
+<arg>${link}</arg>
+<arg>${locator}</arg>
+<msg timestamp="20230913 09:38:05.525" level="INFO">Keypoints 1ST Image: 6502
+Keypoints 2ND Image: 154
+GOOD Matches: 105
+How good it's the match:  68.18181818181817</msg>
+<msg timestamp="20230913 09:38:05.525" level="INFO">${Result} = 68.18181818181817</msg>
+<status status="PASS" starttime="20230913 09:38:00.378" endtime="20230913 09:38:05.525"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230913 09:38:05.525" endtime="20230913 09:38:05.526"/>
+</kw>
+<if>
+<branch type="IF" condition="$Result &lt; 90">
+<kw name="Fail" library="BuiltIn">
+<arg>msg=The images do not meet the minimum percentage of similarity</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<msg timestamp="20230913 09:38:05.526" level="FAIL">The images do not meet the minimum percentage of similarity</msg>
+<status status="FAIL" starttime="20230913 09:38:05.526" endtime="20230913 09:38:05.526"/>
+</kw>
+<status status="FAIL" starttime="20230913 09:38:05.526" endtime="20230913 09:38:05.527"/>
+</branch>
+<branch type="ELSE">
+<kw name="Pass Execution" library="BuiltIn">
+<arg>msg=Same images</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="NOT RUN" starttime="20230913 09:38:05.527" endtime="20230913 09:38:05.527"/>
+</kw>
+<status status="NOT RUN" starttime="20230913 09:38:05.527" endtime="20230913 09:38:05.527"/>
+</branch>
+<status status="FAIL" starttime="20230913 09:38:05.526" endtime="20230913 09:38:05.527"/>
+</if>
+<status status="FAIL" starttime="20230913 09:38:00.378" endtime="20230913 09:38:05.527"/>
+</kw>
+<status status="FAIL" starttime="20230913 09:38:00.377" endtime="20230913 09:38:05.527">The images do not meet the minimum percentage of similarity</status>
+</test>
+<test id="s1-t5" name="Prueba Compare Images using">
+<kw name="CompareImagesExample">
+<arg>https://www.python.org/</arg>
+<arg>xpath = /html</arg>
+<doc>Comparando Imagenes</doc>
+<kw name="Compare Images" library="Funciones1">
+<var>${Result}</var>
+<arg>${link}</arg>
+<arg>${locator}</arg>
+<msg timestamp="20230913 09:38:11.847" level="INFO">Keypoints 1ST Image: 6463
+Keypoints 2ND Image: 6506
+GOOD Matches: 6354
+How good it's the match:  98.3134767136005</msg>
+<msg timestamp="20230913 09:38:11.847" level="INFO">${Result} = 98.3134767136005</msg>
+<status status="PASS" starttime="20230913 09:38:05.530" endtime="20230913 09:38:11.847"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230913 09:38:11.847" endtime="20230913 09:38:11.848"/>
+</kw>
+<if>
+<branch type="IF" condition="$Result &lt; 90">
+<kw name="Fail" library="BuiltIn">
+<arg>msg=The images do not meet the minimum percentage of similarity</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230913 09:38:11.848" endtime="20230913 09:38:11.848"/>
+</kw>
+<status status="NOT RUN" starttime="20230913 09:38:11.848" endtime="20230913 09:38:11.848"/>
+</branch>
+<branch type="ELSE">
+<kw name="Pass Execution" library="BuiltIn">
+<arg>msg=Same images</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<msg timestamp="20230913 09:38:11.848" level="INFO">Execution passed with message:
+msg=Same images</msg>
+<status status="PASS" starttime="20230913 09:38:11.848" endtime="20230913 09:38:11.850"/>
+</kw>
+<status status="PASS" starttime="20230913 09:38:11.848" endtime="20230913 09:38:11.850"/>
+</branch>
+<status status="PASS" starttime="20230913 09:38:11.848" endtime="20230913 09:38:11.850"/>
+</if>
+<status status="PASS" starttime="20230913 09:38:05.530" endtime="20230913 09:38:11.850"/>
+</kw>
+<status status="PASS" starttime="20230913 09:38:05.529" endtime="20230913 09:38:11.850">msg=Same images</status>
+</test>
+<test id="s1-t6" name="Prueba Compare Images using">
+<kw name="CompareImagesExample">
+<arg>https://www.python.org/</arg>
+<arg>xpath = //*[@id="content"]/div/section/div[5]</arg>
+<doc>Comparando Imagenes</doc>
+<kw name="Compare Images" library="Funciones1">
+<var>${Result}</var>
+<arg>${link}</arg>
+<arg>${locator}</arg>
+<msg timestamp="20230913 09:38:18.383" level="INFO">Keypoints 1ST Image: 6522
+Keypoints 2ND Image: 625
+GOOD Matches: 588
+How good it's the match:  94.08</msg>
+<msg timestamp="20230913 09:38:18.383" level="INFO">${Result} = 94.08</msg>
+<status status="PASS" starttime="20230913 09:38:11.852" endtime="20230913 09:38:18.383"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230913 09:38:18.383" endtime="20230913 09:38:18.383"/>
+</kw>
+<if>
+<branch type="IF" condition="$Result &lt; 90">
+<kw name="Fail" library="BuiltIn">
+<arg>msg=The images do not meet the minimum percentage of similarity</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230913 09:38:18.384" endtime="20230913 09:38:18.384"/>
+</kw>
+<status status="NOT RUN" starttime="20230913 09:38:18.384" endtime="20230913 09:38:18.384"/>
+</branch>
+<branch type="ELSE">
+<kw name="Pass Execution" library="BuiltIn">
+<arg>msg=Same images</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<msg timestamp="20230913 09:38:18.384" level="INFO">Execution passed with message:
+msg=Same images</msg>
+<status status="PASS" starttime="20230913 09:38:18.384" endtime="20230913 09:38:18.385"/>
+</kw>
+<status status="PASS" starttime="20230913 09:38:18.384" endtime="20230913 09:38:18.385"/>
+</branch>
+<status status="PASS" starttime="20230913 09:38:18.384" endtime="20230913 09:38:18.385"/>
+</if>
+<status status="PASS" starttime="20230913 09:38:11.851" endtime="20230913 09:38:18.385"/>
+</kw>
+<status status="PASS" starttime="20230913 09:38:11.851" endtime="20230913 09:38:18.385">msg=Same images</status>
+</test>
+<doc>Practica Compare Images</doc>
+<status status="FAIL" starttime="20230913 09:37:44.285" endtime="20230913 09:38:18.386"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="3" skip="0" id="s1" name="Ejemplo1">Ejemplo1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230913 09:37:50.034" level="WARN">Multiple test cases with name 'Prueba Compare Images using' executed in test suite 'Ejemplo1'.</msg>
+<msg timestamp="20230913 09:37:54.961" level="WARN">Multiple test cases with name 'Prueba Compare Images using' executed in test suite 'Ejemplo1'.</msg>
+<msg timestamp="20230913 09:38:00.377" level="WARN">Multiple test cases with name 'Prueba Compare Images using' executed in test suite 'Ejemplo1'.</msg>
+<msg timestamp="20230913 09:38:05.529" level="WARN">Multiple test cases with name 'Prueba Compare Images using' executed in test suite 'Ejemplo1'.</msg>
+<msg timestamp="20230913 09:38:11.851" level="WARN">Multiple test cases with name 'Prueba Compare Images using' executed in test suite 'Ejemplo1'.</msg>
+</errors>
+</robot>

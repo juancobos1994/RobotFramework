@@ -1,0 +1,1 @@
+binary_location = {"goog:chromeOptions": {"binary": "C:/Program Files/Google/Chrome/Application/chrome.exe"}}

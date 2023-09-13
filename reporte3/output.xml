@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1rc1 (Python 3.8.6 on win32)" generated="20230828 23:19:31.211" rpa="false" schemaversion="2">
+<suite id="s1" name="Ejemplo Login" source="C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Test_Cases2\Ejemplo_Login.robot">
+<test id="s1-t1" name="Demo Uno using">
+<kw name="Start" type="SETUP">
+<tag>Test</tag>
+<doc>EjemploLogin</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:19:31.705" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg timestamp="20230828 23:19:31.708" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230828 23:19:34.837" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230828 23:19:34.837" endtime="20230828 23:19:34.837"/>
+</kw>
+<msg timestamp="20230828 23:19:34.839" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</msg>
+<status status="FAIL" starttime="20230828 23:19:31.705" endtime="20230828 23:19:34.839"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:34.839" endtime="20230828 23:19:34.839"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:34.839" endtime="20230828 23:19:34.839"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Test Login | Practice Test Automation</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:34.839" endtime="20230828 23:19:34.839"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:34.839" endtime="20230828 23:19:34.839"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:34.839" endtime="20230828 23:19:34.839"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:31.704" endtime="20230828 23:19:34.839"/>
+</kw>
+<kw name="End" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:19:36.848" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:19:34.840" endtime="20230828 23:19:36.848"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:19:36.848" endtime="20230828 23:19:36.848"/>
+</kw>
+<status status="PASS" starttime="20230828 23:19:34.839" endtime="20230828 23:19:36.848"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:31.704" endtime="20230828 23:19:36.848">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</status>
+</test>
+<test id="s1-t2" name="Demo Uno using">
+<kw name="Start" type="SETUP">
+<tag>Test</tag>
+<doc>EjemploLogin</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:19:36.850" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg timestamp="20230828 23:19:36.853" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230828 23:19:39.892" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230828 23:19:39.892" endtime="20230828 23:19:39.892"/>
+</kw>
+<msg timestamp="20230828 23:19:39.893" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</msg>
+<status status="FAIL" starttime="20230828 23:19:36.850" endtime="20230828 23:19:39.893"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:39.893" endtime="20230828 23:19:39.893"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:39.893" endtime="20230828 23:19:39.893"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Test Login | Practice Test Automation</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:39.893" endtime="20230828 23:19:39.893"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:39.893" endtime="20230828 23:19:39.893"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:39.893" endtime="20230828 23:19:39.893"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:36.850" endtime="20230828 23:19:39.893"/>
+</kw>
+<kw name="End" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:19:41.896" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:19:39.894" endtime="20230828 23:19:41.896"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:19:41.896" endtime="20230828 23:19:41.896"/>
+</kw>
+<status status="PASS" starttime="20230828 23:19:39.894" endtime="20230828 23:19:41.896"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:36.849" endtime="20230828 23:19:41.896">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</status>
+</test>
+<test id="s1-t3" name="Demo Uno using">
+<kw name="Start" type="SETUP">
+<tag>Test</tag>
+<doc>EjemploLogin</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:19:45.943" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg timestamp="20230828 23:19:45.946" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230828 23:19:48.998" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230828 23:19:48.998" endtime="20230828 23:19:48.998"/>
+</kw>
+<msg timestamp="20230828 23:19:48.998" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</msg>
+<status status="FAIL" starttime="20230828 23:19:41.898" endtime="20230828 23:19:48.998"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:48.999" endtime="20230828 23:19:48.999"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:48.999" endtime="20230828 23:19:48.999"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Test Login | Practice Test Automation</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:48.999" endtime="20230828 23:19:48.999"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:48.999" endtime="20230828 23:19:48.999"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:48.999" endtime="20230828 23:19:48.999"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:41.898" endtime="20230828 23:19:48.999"/>
+</kw>
+<kw name="End" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:19:51.010" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:19:48.999" endtime="20230828 23:19:51.010"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:19:51.010" endtime="20230828 23:19:51.010"/>
+</kw>
+<status status="PASS" starttime="20230828 23:19:48.999" endtime="20230828 23:19:51.010"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:41.897" endtime="20230828 23:19:51.010">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</status>
+</test>
+<test id="s1-t4" name="Demo Uno using">
+<kw name="Start" type="SETUP">
+<tag>Test</tag>
+<doc>EjemploLogin</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:19:51.012" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg timestamp="20230828 23:19:51.015" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230828 23:19:54.070" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230828 23:19:54.070" endtime="20230828 23:19:54.070"/>
+</kw>
+<msg timestamp="20230828 23:19:54.071" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</msg>
+<status status="FAIL" starttime="20230828 23:19:51.012" endtime="20230828 23:19:54.071"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:54.071" endtime="20230828 23:19:54.071"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:54.071" endtime="20230828 23:19:54.071"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Test Login | Practice Test Automation</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:54.071" endtime="20230828 23:19:54.071"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:54.071" endtime="20230828 23:19:54.071"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20230828 23:19:54.071" endtime="20230828 23:19:54.071"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:51.012" endtime="20230828 23:19:54.071"/>
+</kw>
+<kw name="End" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:19:56.083" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:19:54.072" endtime="20230828 23:19:56.083"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:19:56.083" endtime="20230828 23:19:56.083"/>
+</kw>
+<status status="PASS" starttime="20230828 23:19:54.072" endtime="20230828 23:19:56.083"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:51.011" endtime="20230828 23:19:56.083">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</status>
+</test>
+<test id="s1-t5" name="Demo Uno using">
+<kw name="Start" type="SETUP">
+<tag>Test</tag>
+<doc>EjemploLogin</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230828 23:19:56.085" level="INFO">Opening browser 'Chrome' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg timestamp="20230828 23:20:00.129" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230828 23:20:03.192" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20230828 23:20:03.192" endtime="20230828 23:20:03.192"/>
+</kw>
+<msg timestamp="20230828 23:20:03.193" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</msg>
+<status status="FAIL" starttime="20230828 23:19:56.085" endtime="20230828 23:20:03.193"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20230828 23:20:03.193" endtime="20230828 23:20:03.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230828 23:20:03.193" endtime="20230828 23:20:03.193"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Test Login | Practice Test Automation</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20230828 23:20:03.193" endtime="20230828 23:20:03.193"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20230828 23:20:03.193" endtime="20230828 23:20:03.193"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20230828 23:20:03.193" endtime="20230828 23:20:03.193"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:56.085" endtime="20230828 23:20:03.193"/>
+</kw>
+<kw name="End" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230828 23:20:05.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230828 23:20:03.194" endtime="20230828 23:20:05.195"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230828 23:20:05.195" endtime="20230828 23:20:05.195"/>
+</kw>
+<status status="PASS" starttime="20230828 23:20:03.194" endtime="20230828 23:20:05.195"/>
+</kw>
+<status status="FAIL" starttime="20230828 23:19:56.084" endtime="20230828 23:20:05.195">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 116.0.5845.111 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x011AA813+48355]
+	(No symbol) [0x0113C4B1]
+	(No symbol) [0x01045358]
+	(No symbol) [0x010661AC]
+	(No symbol) [0x01061EF3]
+	(No symbol) [0x01060579]
+	(No symbol) [0x01090C55]
+	(No symbol) [0x0109093C]
+	(No symbol) [0x0108A536]
+	(No symbol) [0x010682DC]
+	(No symbol) [0x010693DD]
+	GetHandleVerifier [0x0140AABD+2539405]
+	GetHandleVerifier [0x0144A78F+2800735]
+	GetHandleVerifier [0x0144456C+2775612]
+	GetHandleVerifier [0x012351E0+616112]
+	(No symbol) [0x01145F8C]
+	(No symbol) [0x01142328]
+	(No symbol) [0x0114240B]
+	(No symbol) [0x01134FF7]
+	BaseThreadInitThunk [0x76FD7D59+25]
+	RtlInitializeExceptionChain [0x77D3B79B+107]
+	RtlClearBits [0x77D3B71F+191]
+</status>
+</test>
+<doc>Practica Login</doc>
+<status status="FAIL" starttime="20230828 23:19:31.212" endtime="20230828 23:20:05.196"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Ejemplo Login">Ejemplo Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230828 23:19:36.849" level="WARN">Multiple test cases with name 'Demo Uno using' executed in test suite 'Ejemplo Login'.</msg>
+<msg timestamp="20230828 23:19:41.897" level="WARN">Multiple test cases with name 'Demo Uno using' executed in test suite 'Ejemplo Login'.</msg>
+<msg timestamp="20230828 23:19:51.011" level="WARN">Multiple test cases with name 'Demo Uno using' executed in test suite 'Ejemplo Login'.</msg>
+<msg timestamp="20230828 23:19:56.084" level="WARN">Multiple test cases with name 'Demo Uno using' executed in test suite 'Ejemplo Login'.</msg>
+</errors>
+</robot>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230705 22:55:01.291" rpa="false" schemaversion="4">
+<suite id="s1" name="Alerts" source="C:\Users\juanc\PycharmProjects\RobotFrameworkNivel1\Test_Cases\Alerts.robot">
+<test id="s1-t1" name="Demo Uno" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230705 22:55:01.372" level="INFO">Opening browser 'Chrome' to base url 'https://testpages.herokuapp.com/styled/alerts/alert-test.html'.</msg>
+<msg timestamp="20230705 22:55:01.385" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230705 22:55:01.372" endtime="20230705 22:55:03.581"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230705 22:55:03.581" endtime="20230705 22:55:03.696"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 22:55:05.697" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230705 22:55:03.697" endtime="20230705 22:55:05.697"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Test Page For JavaScript Alerts</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230705 22:55:05.697" level="INFO">Page title is 'Test Page For JavaScript Alerts'.</msg>
+<status status="PASS" starttime="20230705 22:55:05.697" endtime="20230705 22:55:05.697"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230705 22:55:05.697" endtime="20230705 22:55:05.697"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.8s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230705 22:55:05.697" endtime="20230705 22:55:05.697"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=alertexamples</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230705 22:55:05.697" level="INFO">Clicking button 'id=alertexamples'.</msg>
+<status status="PASS" starttime="20230705 22:55:05.697" endtime="20230705 22:55:08.133"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230705 22:55:08.133" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230705 22:55:08.133" endtime="20230705 22:55:10.538"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 22:55:12.539" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230705 22:55:10.538" endtime="20230705 22:55:12.539"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=confirmexample</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230705 22:55:12.539" level="INFO">Clicking button 'id=confirmexample'.</msg>
+<status status="PASS" starttime="20230705 22:55:12.539" endtime="20230705 22:55:14.966"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230705 22:55:14.966" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230705 22:55:14.966" endtime="20230705 22:55:17.370"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 22:55:19.371" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230705 22:55:17.371" endtime="20230705 22:55:19.371"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=confirmexample</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230705 22:55:19.371" level="INFO">Clicking button 'id=confirmexample'.</msg>
+<status status="PASS" starttime="20230705 22:55:19.371" endtime="20230705 22:55:21.795"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20230705 22:55:21.795" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230705 22:55:21.795" endtime="20230705 22:55:24.199"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 22:55:26.201" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230705 22:55:24.200" endtime="20230705 22:55:26.201"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=alertexamples</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230705 22:55:26.201" level="INFO">Clicking button 'id=alertexamples'.</msg>
+<status status="PASS" starttime="20230705 22:55:26.201" endtime="20230705 22:55:28.623"/>
+</kw>
+<kw name="Alert Should Be Present" library="SeleniumLibrary">
+<arg>I am an alert box!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20230705 22:55:28.623" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230705 22:55:28.623" endtime="20230705 22:55:31.028"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230705 22:55:33.028" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230705 22:55:31.028" endtime="20230705 22:55:33.028"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230705 22:55:33.028" endtime="20230705 22:55:35.853"/>
+</kw>
+<doc>Prueba Alerts</doc>
+<tag>TestUno</tag>
+<status status="PASS" starttime="20230705 22:55:01.372" endtime="20230705 22:55:35.853"/>
+</test>
+<doc>Prueba Alerts</doc>
+<status status="PASS" starttime="20230705 22:55:01.291" endtime="20230705 22:55:35.853"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">TestUno</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Alerts">Alerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
